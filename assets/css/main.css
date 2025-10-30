@@ -1,0 +1,243 @@
+/* ==========================================================================
+   HEADER 
+   ========================================================================== */
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    transition: background-color ease-in-out 2s;
+}
+
+
+
+/* Logo du header */
+header .logo img {
+    height: auto;
+    width: 100%;
+    display: block;
+    max-width: 160px;
+}
+
+/* Navigation du header */
+header nav {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+
+header nav a {
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+/* ==========================================================================
+   SECTIONS 
+   ========================================================================== */
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+
+/* ==========================================================================
+   SECTION INTRO - 
+   ========================================================================== */
+#intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   SECTION TEAM 
+   ========================================================================== */
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#team img {
+    max-width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+#team h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    letter-spacing: 10px;
+    text-align: center;
+    opacity: 0.3;
+}
+
+/* Carte photographe */
+#team .photographer {
+    width: 300px;
+    min-height: 60vh;
+}
+
+
+
+#team figure {
+    margin: 0;
+}
+
+#team h3 {
+    text-align: center;
+}
+
+#team a {
+    display: block;
+    border: 1px solid #313131;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1em;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+#team .photographer:hover a {
+    border: 1px solid #fff;
+}
+
+/* ==========================================================================
+   SECTION PORTRAITS 
+   ========================================================================== */
+.img-wrapper {
+    width: 50vw;
+
+}
+
+#portraits .wrapper {
+    width: 50vw;
+    padding: 100px;
+}
+
+/* ==========================================================================
+   SECTION OUTDOOR 
+   ========================================================================== */
+#outdoor .img-wrapper {
+    width: 50vw;
+}
+
+#outdoor .wrapper {
+    width: 50vw;
+    padding: 100px;
+}
+
+/* ==========================================================================
+   SECTION CONTACT 
+   ========================================================================== */
+#contact .img-wrapper {
+    width: 50vw;
+    padding: 100px;
+
+}
+
+#contact .wrapper {
+    width: 50vw;
+    padding: 100px;
+}
+
+/* Formulaire de contact*/
+#contact form {
+    margin-top: 30px;
+}
+
+#contact form p {
+    margin-bottom: 20px;
+}
+
+
+
+/* ==========================================================================
+   CHECKBOX PERSONNALISÉE
+   ========================================================================== */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    flex-shrink: 0;
+}
+
+.checkbox-wrapper label {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   BOUTONS
+   ========================================================================== */
+.button {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+#contact .button:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton noir */
+.button.button-black {
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+
+/* Bouton blanc */
+.button.button-white {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+}

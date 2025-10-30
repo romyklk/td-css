@@ -1,0 +1,38 @@
+/*
+==========================================================================
+PALETTE DE COULEURS
+==========================================================================
+Couleur principale violet : rgba(188,62,255,1) - #BC3EFF
+Couleur bleu : rgba(102,110,255,1) - #666EFF
+Couleur vert : rgba(82,226,140,1) - #52E28C
+Couleur jaune : rgba(249,255,123,1) - #F9FF7B
+Couleur orange : rgba(255,191,77,1) - #FFBF4D
+Couleur rouge : rgba(255,80,80,1) - #FF5050
+Couleur texte : #333 (Gris foncé)
+Couleur texte secondaire : #666 (Gris moyen)
+Couleur fond : #f0f0f0 (Gris clair)
+Couleur fond cartes : #fff (Blanc)
+Couleur fond sombre : #000 (Noir)
+==========================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Unica+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.img-wrapper {
+    background: blue;
+}

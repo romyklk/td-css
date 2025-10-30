@@ -1,0 +1,160 @@
+/* ==========================================================================
+   CONTAINER PRINCIPAL
+   ========================================================================== */
+
+
+#wrapper{
+    background-color: #666EFF;
+}
+
+.container {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+/* ==========================================================================
+   HEADER - Position fixed en haut de page
+   ========================================================================== */
+
+
+/* ==========================================================================
+   NAVIGATION - Position fixed sur le côté gauche
+   ========================================================================== */
+
+
+
+nav ul li {
+    transition: background-color 0.3s;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+}
+
+
+/* ==========================================================================
+   MAIN CONTENT
+   ========================================================================== */
+main {
+    margin: 0 20px 0 20px;
+}
+
+/* ==========================================================================
+   ARTICLE - Contenu principal
+   ========================================================================== */
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+/* Titre de l'article */
+article h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+article h1 span {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+
+/* Image de l'article */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphes de l'article */
+article p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+
+/* ==========================================================================
+   ASIDE - Sidebar droite (Position fixed)
+   ========================================================================== */
+
+
+/* Carte Auteur */
+.auteur {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auteur h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.auteur p {
+    color: #666;
+    font-weight: bold;
+}
+
+/* Carte Publicité avec badge (Position relative pour le badge) */
+
+.publicite h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.publicite p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+/* ==========================================================================
+   FOOTER - Position fixed en bas de page
+   ========================================================================== */
+
+
+
+/* Cœur animé dans le footer */
+footer span {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 30px;
+    color: #FF5050;
+    animation: heartbeat .5s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}

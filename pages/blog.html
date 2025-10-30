@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog B1 - LA MANU 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/style-blog.css">
+</head>
+
+<body id="wrapper">
+
+    <header>
+        Blog B1 - LA MANU 2025
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><i class="fas fa-home"></i>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li><i class="fas fa-newspaper"></i>
+                    <a href="../index.html#portraits">Portraits</a>
+                </li>
+                <li><i class="fas fab fa-airbnb"></i>
+                    <a href="../index.html#collectifs">Collectifs</a>
+                </li>
+                <li><i class="fas fa-phone"></i>
+                    <a href="../index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h1>
+                    <span>Bienvenue</span>
+                    <span>dans</span>
+                    <span>mon</span>
+                    <span>article</span>
+                </h1>
+
+                <img src="../assets/images/outdoor.jpg" alt="Paysage brumeux avec des arbres">
+
+                <p>Bienvenue dans ce guide pratique sur les positionnements CSS ! Avant de plonger dans Flexbox et
+                    Grid,
+                    il est
+                    essentiel de bien comprendre comment positionner les éléments avec les techniques
+                    traditionnelles.
+                    Ce contenu
+                    explore en profondeur les cinq valeurs de la propriété position à travers des exemples concrets
+                    tirés d'une mise en
+                    page réelle.
+                </p>
+
+                <p>
+                    Le positionnement <strong>static</strong> est la valeur par défaut de tous les éléments HTML.
+                    Dans
+                    ce
+                    mode, les
+                    éléments suivent le flux normal du document, s'empilant les uns après les autres. C'est le cas
+                    de
+                    notre contenu
+                    principal dans l'article : chaque paragraphe, chaque titre se place naturellement après
+                    l'élément
+                    précédent, sans
+                    intervention particulière.
+                </p>
+
+                <p>
+                    Le positionnement <strong>relative</strong> est subtil mais puissant. L'élément conserve sa
+                    place
+                    dans le flux du
+                    document, mais vous pouvez le décaler avec les propriétés top, right, bottom ou left. Dans notre
+                    exemple, le
+                    conteneur de publicité utilise position: relative pour servir de référence à son badge.
+                    L'élément
+                    reste où il
+                    devrait être, mais il devient un point d'ancrage pour ses enfants positionnés en absolute.
+                </p>
+
+                <p>
+                    Le positionnement <strong>absolute</strong> retire complètement l'élément du flux normal. Il se
+                    positionne par
+                    rapport à son premier ancêtre qui n'est pas en position static. Regardez le badge "Nouveau" dans
+                    la
+                    publicité : avec
+                    position: absolute et top: -10px; right: 20px, il sort littéralement du cadre de son conteneur
+                    parent et se place
+                    exactement où nous le souhaitons, sans perturber les autres éléments. Les pseudo-éléments du
+                    footer
+                    (les icônes de
+                    fusée et d'ordinateur) utilisent aussi ce positionnement pour flotter librement dans le footer.
+                </p>
+
+                <p>
+                    Le positionnement <strong>fixed</strong> est fascinant car l'élément se positionne par rapport à
+                    la
+                    fenêtre du
+                    navigateur et reste visible même lors du défilement. Dans notre mise en page, trois éléments
+                    utilisent cette
+                    technique : le header en haut avec position: fixed; top: 0; left: 0, la navigation latérale
+                    gauche
+                    avec position:
+                    fixed; left: 30px; top: 120px, et l'encadré auteur sur la droite avec position: fixed; right:
+                    50px;
+                    top: 120px. Le
+                    footer utilise aussi fixed pour rester ancré en bas de la page. Notez l'importance du z-index:
+                    1000
+                    sur le header
+                    pour s'assurer qu'il reste toujours au-dessus des autres contenus.
+                </p>
+
+                <p>
+                    Le positionnement <strong>sticky</strong> n'est pas présent dans cet exemple, mais il mérite
+                    d'être
+                    mentionné. C'est
+                    un hybride entre relative et fixed : l'élément se comporte comme un élément relatif jusqu'à ce
+                    qu'il
+                    atteigne un
+                    seuil de défilement, puis il se "colle" comme un élément fixed.
+                </p>
+
+                <p>Au-delà du positionnement, ce code illustre parfaitement le modèle de boîte CSS. Chaque élément
+                    est
+                    une boîte avec du
+                    contenu, du padding (espacement intérieur), une bordure et une marge (espacement extérieur). Le
+                    box-sizing:
+                    border-box appliqué globalement facilite les calculs : la largeur définie inclut le padding et
+                    la
+                    bordure, rendant
+                    les dimensions plus prévisibles.
+                </p>
+
+                <p>Comprendre ces positionnements vous donne un contrôle total sur votre mise en page. Oui, Flexbox
+                    et
+                    Grid sont plus
+                    modernes et parfois plus simples, mais les positionnements traditionnels restent indispensables
+                    pour
+                    des cas précis
+                    comme les tooltips, les menus déroulants, les badges, les barres de navigation fixes, ou tout
+                    élément qui doit
+                    sortir du flux normal du document.
+                </p>
+
+                <button>Lire la suite</button>
+            </article>
+
+            <aside>
+                <div class="auteur">
+                    <h3>Auteur</h3>
+                    <p>Camille L.</p>
+                </div>
+
+                <div class="publicite">
+                    <span class="badge">Nouveau</span>
+                    <h3>Publicité</h3>
+                    <p>Découvrez notre nouvelle offre !</p>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        © 2025 Design with <span>&hearts;</span> by LA MANU - Tous droits réservés
+    </footer>
+
+
+</body>
+
+</html>

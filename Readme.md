@@ -87,7 +87,7 @@ rm -rf .git
 - [ ] Fichier `style-blog.css` complété  
 - [ ] Rendu visuel conforme aux attentes
 - [ ] Code CSS propre et documenté
-- [ ] Site fonctionnel et déployé en ligne 
+- [ ] Site fonctionnel et déployé en ligne et lien du repo GitHub ou GitLab
 
 
 **Options recommandées :**
